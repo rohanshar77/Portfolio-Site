@@ -3,6 +3,14 @@ const path = require('path');
 
 const app = express();
 
+// Middleware to force HTTPS
+app.use((req, res, next) => {
+  if (req.headers['x-forwarded-proto'] !== 'https') {
+    return res.redirect(`https://${req.headers.host}${req.url}`);
+  }
+  return next();
+});
+
 // Serve static files
 app.use(express.static(path.join(__dirname, '')));
 
