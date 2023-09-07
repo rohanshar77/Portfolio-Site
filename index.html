@@ -1,667 +1,686 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QFYBDR7BFS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
+      gtag("config", "G-QFYBDR7BFS");
+    </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFYBDR7BFS"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rohan Sharma</title>
 
-    gtag('config', 'G-QFYBDR7BFS');
-  </script>
-
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rohan Sharma</title>
-
-  <!--
+    <!--
     - favicon
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   -->
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Rohan Sharma"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Rohan Sharma">Rohan Sharma</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Rohan Sharma" width="80">
-        </figure>
+            <p class="title">CS Student @ UMD</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Rohan Sharma">Rohan Sharma</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">CS Student @ UMD</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:contact@rohansharma.fyi" class="contact-link"
+                  >contact@rohansharma.fyi</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+19739540821" class="contact-link"
+                  >+1 (973) 954-0821</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:contact@rohansharma.fyi" class="contact-link">contact@rohansharma.fyi</a>
-            </div>
+                <time datetime="2003-08-21">August 21, 2003</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>San Jose, California</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
 
-              <a href="tel:+19739540821" class="contact-link">+1 (973) 954-0821</a>
-            </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/rohan77/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
 
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-08-21">August 21, 2003</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>San Jose, California</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/rohan77/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
+          <section class="about-text">
+            <p>
+              Hello! I'm Rohan Sharma, a Computer Science student specializing
+              in AI and Machine Learning at the University of Maryland, College
+              Park. I have an interest in leveraging technology to solve
+              real-world problems, which is best demonstrated by my recent
+              internships and projects.
+            </p>
 
-        <section class="about-text">
-          <p>
-            Hello! I'm Rohan Sharma, a Computer Science student specializing in AI and Machine Learning at the University of Maryland, College Park. 
-            
-            I have an interest in leveraging technology to solve real-world problems, which is best demonstrated by my recent internships and projects.
-          </p>
+            <p>
+              <strong>🎓 Educational Background</strong><br />
 
-          <p>
-            <strong>🎓 Educational Background</strong><br>
-          
-            <span style="margin-left: 20px; display: block;">
-              I'm pursuing a Bachelor of Science in Computer Science with a concentration in AI/Machine Learning and a Minor in Computational Finance.
-              My academic achievements have been recognized with a Presidential Merit Scholarship.
-            </span>
-          </p>          
+              <span style="margin-left: 20px; display: block">
+                I'm pursuing a Bachelor of Science in Computer Science with a
+                concentration in AI/Machine Learning and a Minor in
+                Computational Finance. My academic achievements have been
+                recognized with a Presidential Merit Scholarship.
+              </span>
+            </p>
 
-          <p>
-            <strong>💼 Professional Experience</strong><br>
+            <p>
+              <strong>💼 Professional Experience</strong><br />
 
-            <span style="margin-left: 20px; display: block;">
-              I recently completed a software engineering internship at Crestron Electronics, which was an excellent learning experience that allowed me to work on real-world problems and collaborate with industry professionals.         
-            </span>
-          </p>
-          
-          <p>
-            <strong>🛠️ Technical Stack</strong><br>
+              <span style="margin-left: 20px; display: block">
+                I recently completed a software engineering internship at
+                Crestron Electronics, which was an excellent learning experience
+                that allowed me to work on real-world problems and collaborate
+                with industry professionals.
+              </span>
+            </p>
 
-            <span style="margin-left: 20px; display: block;">
-              My preferred languages are Python, Java, and C/C++, but I have also dabbled in Ruby, Rust, and OCaml. 
-          
-              On the web development front, I am comfortable with React, Flask, and JavaScript, among other technologies.
-            </span>
-          </p>
+            <p>
+              <strong>🛠️ Technical Stack</strong><br />
 
-          <p>
-            <strong>🔭 Projects</strong><br>
+              <span style="margin-left: 20px; display: block">
+                My preferred languages are Python, Java, and C/C++, but I have
+                also dabbled in Ruby, Rust, and OCaml. On the web development
+                front, I am comfortable with React, Flask, and JavaScript, among
+                other technologies.
+              </span>
+            </p>
 
-            <span style="margin-left: 20px; display: block;">
-              I enjoy building! Whether it's Career Ninja, a web-based platform that conducts AI-powered mock interviews, or Terrapin Course Search, a tool that revolutionizes how students discover courses at UMD, my projects reflect my desire to create impactful solutions.          
-            </span>
-          </p>
-          
-          <p>
-            <strong>📚 Life Beyond Code</strong><br>
+            <p>
+              <strong>🔭 Projects</strong><br />
 
-            <span style="margin-left: 20px; display: block;">
-              Aside from my academic and professional commitments, I founded and currently lead "Learn to Code at UMD," an initiative aimed at making coding accessible to everyone, irrespective of their field of study. Our club aims to give members an understanding of basic Python and data structures through weekly meetings.
-            </span>
-          </p>
+              <span style="margin-left: 20px; display: block">
+                I enjoy building! Whether it's Career Ninja, a web-based
+                platform that conducts AI-powered mock interviews, or Terrapin
+                Course Search, a tool that revolutionizes how students discover
+                courses at UMD, my projects reflect my desire to create
+                impactful solutions.
+              </span>
+            </p>
 
-          <p>
-            <strong>🎯 Future Aspirations</strong><br>
+            <p>
+              <strong>📚 Life Beyond Code</strong><br />
 
-            <span style="margin-left: 20px; display: block;">
-              I'm currently on the lookout for a Software Engineering internship for the upcoming summer. 
-          
-              I'm particularly interested in roles that will allow me to leverage my skills to drive innovation and efficiency in the tech industry.
-            </span>
-          </p>
+              <span style="margin-left: 20px; display: block">
+                Aside from my academic and professional commitments, I founded
+                and currently lead "Learn to Code at UMD," an initiative aimed
+                at making coding accessible to everyone, irrespective of their
+                field of study. Our club aims to give members an understanding
+                of basic Python and data structures through weekly meetings.
+              </span>
+            </p>
 
-        </section>
+            <p>
+              <strong>🎯 Future Aspirations</strong><br />
 
+              <span style="margin-left: 20px; display: block">
+                I'm currently on the lookout for a Software Engineering
+                internship for the upcoming summer. I'm particularly interested
+                in roles that will allow me to leverage my skills to drive
+                innovation and efficiency in the tech industry.
+              </span>
+            </p>
+          </section>
 
-        <!--
+          <!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+            <section class="testimonials-modal">
+              <button
+                type="button"
+                class="modal-close-btn"
+                data-modal-close-btn
+                aria-label="Close modal"
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-              </figure>
-
-            </div>
-
-            <div class="modal-content">
-
-              <div data-modal-text>
-                <p>
-                </p>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box"></figure>
               </div>
 
-            </div>
+              <div class="modal-content">
+                <div data-modal-text>
+                  <p></p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
 
-          </section>
-
-        </div>
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University Maryland, College Park</h4>
-
-              <span>Aug. 2021 - May 2025</span>
-
-              <p class="timeline-text">
-                B.S. in Computer Science (Machine Learning Concentration)<br>
-                Minor in Computational Finance<br>
-                Presidential Merit Scholarship
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Archbishop Mitty High School</h4>
-
-              <span>Aug. 2017 — May 2021</span>
-
-              <p class="timeline-text">
-                Principal's Honor Roll
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Engineer Intern - Crestron Electronics</h4>
-
-              <span>May 2023 — Aug. 2023</span>
-
-              <p class="timeline-text">
-                Led debugging efforts for the NVX Stream Security project by identifying failures and strategically generating logs to trace/report source code errors, leading to improvement in data stream security.<br><br>
-
-                Authored and maintained comprehensive documentation for the NVX Stream Security project, increasing codebase understanding amongst existing team members and reducing onboarding time for new team members by 20%.<br>
-
-                <br>Collaborated with the product management and design teams to refine the project scope and requirements of TX3 devices, enhancing end-user experience and meeting key performance indicators.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Web Developer Intern - The Olander Family of Companies</h4>
-
-              <span>May 2020 - Dec. 2020</span>
-
-              <p class="timeline-text">
-                Generated a 15% increase in website traffic through executing successful advertising campaigns on Facebook, Google, and LinkedIn.<br><br>
-
-                Improved customer retention by 12% by designing graphics and flyers for company events and effectively managing company social media accounts.<br><br>
-
-                Implemented website optimization strategies that led to a 7% increase in online sales.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Projects</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">CareerNinja</h4>
-
-              <span>Jul. 2023 - Aug 2023</span>
-
-              <p class="timeline-text">
-                Engineered a web-based platform that utilizes artificial intelligence to conduct custom mock interviews based on
-                the user’s resume and a job description, as well as interview feedback and sample responses to skipped questions.<br><br>
-                
-                Enhanced the web app with the Google Speech-to-Text API and React Speech Recognition for an immersive video
-                interview experience, and the ChatGPT API to create interview questions, feedback, hints, and sample responses.<br><br>
-                
-                Designed a robust and scalable RESTful API with Python and Flask, enabling seamless communication between
-                the frontend React application and the machine learning algorithms powering the interview simulations.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Terrapin Course Search</h4>
-
-              <span>Jun. 2023</span>
-
-              <p class="timeline-text">
-                Engineered an AI-powered platform to intelligently search and categorize the UMD course catalog, significantly improving the course discovery process for students, receiving over 20,000 impressions on LinkedIn in one week.<br><br>
-                
-                Leveraged the PlanetTerp API for data collection and implemented a Machine Learning model using the ChatGPT API to create course embeddings, achieving high relevance in search results.<br><br>
-                
-                Integrated the solution with a Python-Flask backend and React frontend, incorporating Pinecone for database operations, improving the scalability and responsiveness of the web application.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-        
-          <ul class="skills-list content-card">
-        
-            <!-- Languages -->
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Languages:</h5>
-                <!-- Listing your skills with vegas-gold color -->
-                <p style="color: var(--vegas-gold);">Python, Java, C/C++, Ruby, Rust, MATLAB, OCaml, MIPS Assembly</p>
-              </div>
-        
-            </li>
-        
-            <!-- Developer Tools -->
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Developer Tools:</h5>
-                <!-- Listing your skills with vegas-gold color -->
-                <p style="color: var(--vegas-gold);">Git, SVN, Unix, Linux, Visual Studio Code, Eclipse, JUnit, GDB</p>
-              </div>
-        
-            </li>
-        
-            <!-- Web Development -->
-            <li class="skills-item">
-        
-              <div class="title-wrapper">
-                <h5 class="h5">Web Development:</h5>
-                <!-- Listing your skills with vegas-gold color -->
-                <p style="color: var(--vegas-gold);">React, Node.js, Express.js, Flask, Pinecone, JavaScript, HTML, CSS</p>
-              </div>
-        
-            </li>
-        
-          </ul>
-        
-        </section>
-        
-        
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-select-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  University Maryland, College Park
+                </h4>
+
+                <span>Aug. 2021 - May 2025</span>
+
+                <p class="timeline-text">
+                  B.S. in Computer Science (Machine Learning Concentration)<br />
+                  Minor in Computational Finance<br />
+                  Presidential Merit Scholarship
+                </p>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Web development</button>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Archbishop Mitty High School
+                </h4>
+
+                <span>Aug. 2017 — May 2021</span>
+
+                <p class="timeline-text">Principal's Honor Roll</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Software Engineer Intern - Crestron Electronics
+                </h4>
+
+                <span>May 2023 — Aug. 2023</span>
+
+                <p class="timeline-text">
+                  Led debugging efforts for the NVX Stream Security project by
+                  identifying failures and strategically generating logs to
+                  trace/report source code errors, leading to improvement in
+                  data stream security.<br /><br />
+
+                  Authored and maintained comprehensive documentation for the
+                  NVX Stream Security project, increasing codebase understanding
+                  amongst existing team members and reducing onboarding time for
+                  new team members by 20%.<br />
+
+                  <br />Collaborated with the product management and design
+                  teams to refine the project scope and requirements of TX3
+                  devices, enhancing end-user experience and meeting key
+                  performance indicators.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Developer Intern - The Olander Family of Companies
+                </h4>
+
+                <span>May 2020 - Dec. 2020</span>
+
+                <p class="timeline-text">
+                  Generated a 15% increase in website traffic through executing
+                  successful advertising campaigns on Facebook, Google, and
+                  LinkedIn.<br /><br />
+
+                  Improved customer retention by 12% by designing graphics and
+                  flyers for company events and effectively managing company
+                  social media accounts.<br /><br />
+
+                  Implemented website optimization strategies that led to a 7%
+                  increase in online sales.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Projects</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">CareerNinja</h4>
+
+                <span>Jul. 2023 - Aug 2023</span>
+
+                <p class="timeline-text">
+                  Engineered a web-based platform that utilizes artificial
+                  intelligence to conduct custom mock interviews based on the
+                  user’s resume and a job description, as well as interview
+                  feedback and sample responses to skipped questions.<br /><br />
+
+                  Enhanced the web app with the Google Speech-to-Text API and
+                  React Speech Recognition for an immersive video interview
+                  experience, and the ChatGPT API to create interview questions,
+                  feedback, hints, and sample responses.<br /><br />
+
+                  Designed a robust and scalable RESTful API with Python and
+                  Flask, enabling seamless communication between the frontend
+                  React application and the machine learning algorithms powering
+                  the interview simulations.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Terrapin Course Search</h4>
+
+                <span>Jun. 2023</span>
+
+                <p class="timeline-text">
+                  Engineered an AI-powered platform to intelligently search and
+                  categorize the UMD course catalog, significantly improving the
+                  course discovery process for students, receiving over 20,000
+                  impressions on LinkedIn in one week.<br /><br />
+
+                  Leveraged the PlanetTerp API for data collection and
+                  implemented a Machine Learning model using the ChatGPT API to
+                  create course embeddings, achieving high relevance in search
+                  results.<br /><br />
+
+                  Integrated the solution with a Python-Flask backend and React
+                  frontend, incorporating Pinecone for database operations,
+                  improving the scalability and responsiveness of the web
+                  application.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <!-- Languages -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Languages:</h5>
+                  <!-- Listing skills with vegas-gold color -->
+                  <p style="color: var(--vegas-gold)">
+                    Python, Java, C/C++, Ruby, Rust, MATLAB, OCaml, MIPS
+                    Assembly
+                  </p>
+                </div>
+              </li>
+
+
+            <!-- Web Development -->
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development:</h5>
+                <!-- Listing skills with vegas-gold color -->
+                <p style="color: var(--vegas-gold)">
+                  React, Node.js, Express.js, Flask, Pinecone, JavaScript,
+                  HTML, CSS
+                </p>
+              </div>
+            </li>
+
+            <!-- Data Management -->
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Management:</h5>
+                <!-- Listing skills with vegas-gold color -->
+                <p style="color: var(--vegas-gold)">
+                  MongoDB, Numpy, Pandas, Scipy, Matplotlib
+                </p>
+              </div>
+            </li>
+
+              <!-- Developer Tools -->
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Developer Tools:</h5>
+                  <!-- Listing skills with vegas-gold color -->
+                  <p style="color: var(--vegas-gold)">
+                    Git, SVN, Unix, Linux, Visual Studio Code, Eclipse, JUnit,
+                    GDB
+                  </p>
+                </div>
               </li>
 
             </ul>
+          </section>
+        </article>
 
-          </div>
+        <!--
+        - #PORTFOLIO
+      -->
 
-          <ul class="project-list">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-            <li class="project-item  active" data-filter-item data-category="Web development">
-              <a href="https://www.terrapincourses.com">
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-select-value>
+                  Select category
+                </div>
 
-                <h3 class="project-title">Terrapin Course Search</h3>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-                <p class="project-category">Web development</p>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
 
-              </a>
-            </li>
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
 
-            <li class="project-item  active" data-filter-item data-category="Web development">
-              <a href="https://www.careerninja.ai">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Web development"
+              >
+                <a href="https://www.terrapincourses.com">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
+                  <h3 class="project-title">Terrapin Course Search</h3>
 
-                <h3 class="project-title">CareerNinja</h3>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-                <p class="project-category">Web development</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="Web development"
+              >
+                <a href="https://www.careerninja.ai">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-          </ul>
+                  <h3 class="project-title">CareerNinja</h3>
 
-        </section>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-      </article>
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d-121.889407185312!3d37.33820837985721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc68d4857d49%3A0xeda7b222e06616e7!2sSan%20Jose%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d200000!2d-121.889407185312!3d37.33820837985721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcc68d4857d49%3A0xeda7b222e06616e7!2sSan%20Jose%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
